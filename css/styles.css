@@ -122,6 +122,11 @@ ul li a {
     transform: scale(0.9);
 }
 
+.chefs {
+    text-align: center;
+    padding: 30px;
+}
+
 .chefs h2 {
     text-align: center;
     font-size: 24px;
@@ -216,6 +221,110 @@ ul li a {
   }
 
 .chef4 p {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.menu {
+    text-align: center;
+    padding: 30px;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tagine {
+    margin: 10px;
+}
+.tagine img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.tagine h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+.tagine p {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.couscous {
+    margin: 10px;
+}
+.couscous img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.couscous h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+.couscous p {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.pastilla {
+    margin: 10px;
+}
+.pastilla img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.pastilla h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+.pastilla p {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.tea {
+    margin: 10px;
+}
+.tea img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.tea h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+.tea p {
     text-align: center;
     font-size: 18px;
     padding-bottom: 20px;
