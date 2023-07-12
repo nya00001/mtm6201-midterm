@@ -330,6 +330,30 @@ ul li a {
     padding-bottom: 20px;
 }
 
+.price {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.price {
+    animation: borderAnimation 1s forwards;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      border-width: 0;
+    }
+    50% {
+      border-width: 2px;
+      border-color: #00A6A6;
+      border-style: solid;
+    }
+    100% {
+        border-width: 0;
+      }
+  }
+
 .contact {
     text-align: center;
     padding: 30px;
@@ -393,6 +417,18 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #00A6A6;
     transform: scale(0.9);
+}
+
+.location h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.location iframe {
+    width: 100%;
+    height: 400px;
 }
 
 footer {
