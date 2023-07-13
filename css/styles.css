@@ -50,25 +50,29 @@ table {
 	border-spacing: 0;
 }
 
+/* defines CSS custom properties (variables) for various colors. */
 :root {
     --body-color: #F7F7FF;
     --nav-color: #279AF1;
     --footer-color: #23B5D3;
     --text-color: #070600;
     --text-color-second: #C3ADFF;
-  }
+}
 
+/* Sets the font family and color for all the body */
 body {
     background-color: var(--body-color);
     font-family: 'Ysabeau Infant', sans-serif;
 }
 
+/* applies a flexbox layout to logo */
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* styles a navigation menu with centered items that scale up and change background color on hover. */
 ul {
     display: flex;
     flex-direction: column;
@@ -101,6 +105,7 @@ ul li a:hover {
     background-color: var(--text-color-second);
 }
 
+/* styles .home with centered text, a heading with custom colors and styles, a paragraph with custom colors and font size, and a styles a contact link as a button with hover and active effects. */
 .home {
     text-align: center;
     padding: 30px;
@@ -140,7 +145,7 @@ ul li a:hover {
   
 .contactlink:active {
     background-color: var(--nav-color);
-  }
+}
 
 .bleed {
     text-align: center;
@@ -149,6 +154,7 @@ ul li a:hover {
     font-weight: bold;
 }
 
+/* styles the chefs and menu section with a heading that has custom colors, alignment, font size, and weight. The images have a maximum width, auto height, centered display, and margin. .info section within each chef's entry is styled having custom colors, alignment, and font size.*/
 .chefs h2 {
     color: var(--text-color);
     text-align: center;
@@ -228,6 +234,7 @@ h2 {
     margin: 10px;
 }
 
+/* create a border effect. The animation runs for 1 second and repeats indefinitely. keyframes specify the border width and color at different percentages of the animation duration to create a pulsating border effect. */
 .price {
     font-size: 20px;
     margin-bottom: 20px;
@@ -260,6 +267,7 @@ h2 {
     margin-bottom: 30px;
 }
 
+/* styles a form with input fields, labels, and a submit button, defining their appearance and behavior. */
 form {
     margin-top: 50px;
 }
@@ -316,6 +324,7 @@ input[type="submit"]:hover {
     transform: scale(0.9);
 }
 
+/* styles the heading and iframe element within the location class, specifying their appearance and dimensions. */
 .location h3 {
     color: var(--text-color);
     text-align: center;
@@ -329,6 +338,7 @@ input[type="submit"]:hover {
     height: 400px;
 }
 
+/* styles the footer element, setting its background color, text color, alignment, padding, and position so that it bleeds into wrapper container. */
 footer {
     background-color: var(--footer-color);
     color: var(--text-color);
@@ -342,7 +352,8 @@ footer {
     justify-content: center;
     margin-bottom: 20px;
 }
-  
+
+/* styles the social icons, displaying them in one line, setting margins, colors, and font size. The hover effect changes the text color. */
 .social-icons a {
     display: inline-block;
     margin: 0 10px;
@@ -351,7 +362,7 @@ footer {
 }
   
 .social-icons a:hover {
-    color: #fff;
+    color: var(--body-color);
 }
 
 .up {
