@@ -365,6 +365,7 @@ footer {
     color: var(--body-color);
 }
 
+/* styles the skip-link, positioning it at the bottom-right corner of the page, setting the color and font size. The hover effect triggers an animation that moves the element vertically. */
 .up {
     position: absolute;
     bottom: 10px;
@@ -395,6 +396,7 @@ footer {
     vertical-align: middle;
 }
 
+/* @media rule is used to apply specific styles when the screen width is at least 968 pixels. */
 @media screen and (min-width: 968px) 
 {
     .wrapper {
@@ -406,6 +408,7 @@ footer {
         display: flex;
     }
 
+    /* displays as a flex container with items aligned to the end and arranged in a row direction. */
     ul {
         padding-left: 9rem ;
         margin: 85px;
@@ -414,6 +417,7 @@ footer {
         flex-direction: row;
     }
 
+    /* positions the .home element absolutely, spanning from the left to the right edge of its containing element */
     .home {
         position: absolute;
         left: 0;
@@ -439,13 +443,7 @@ footer {
         padding: 20px;
     }
 
-    .chefs {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 20px;
-    }
-
+    /* sets up a grid layout for the .chefs and .menu-items containers. They have two columns and two rows, with a gap of 20 pixels between grid items. */
     .chefs {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -460,19 +458,13 @@ footer {
         gap: 20px;
     }
 
-    footer {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin-top: 50px;
-    }
-
+    /* creates a grid layout for the .contact container with two equal-width columns and a 20px gap. The .form element spans the first column, while the .location element spans the second column. */
     .contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
-      
+
     .form {
         grid-column: 1 / span 1;
     }
@@ -488,6 +480,13 @@ footer {
 
     iframe {
         margin-top: 100px;
+    }
+
+    footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-top: 50px;
     }
 
 }
