@@ -88,6 +88,10 @@ ul li a {
     border-radius: 10px;
 }
 
+ul li a:hover {
+    background-color: #333232;
+}
+
 .home {
     text-align: center;
     padding: 30px;
@@ -103,28 +107,34 @@ ul li a {
     font-size: 18px;
 }
 
-.home button {
-    background-color: #333232;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    display: block;
-    width: 100%;
+.contactlink {
+    display: inline-block;
+    padding: 20px;
     margin-top: 20px;
     font-size: 18px;
-    font-family: 'Ysabeau Infant', sans-serif;
-    border-radius: 10px;
-    transition: all 0.5s ease;
-}
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #333232;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contactlink:hover {
+    background-color: black;
+  }
+  
+  .contactlink:active {
+    background-color: #333232;
+  }
 
-.home button:hover {
-    background-color: #00A6A6;
-    transform: scale(0.9);
-}
-
-.chefs {
+.bleed {
     text-align: center;
     padding: 30px;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .chefs h2 {
@@ -233,7 +243,7 @@ ul li a {
 
 .menu h2 {
     text-align: center;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -486,3 +496,60 @@ footer {
     vertical-align: middle;
 }
 
+@media screen and (min-width: 768px) 
+{
+    .wrapper {
+        margin: auto;
+        max-width: 80%;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #00A6A6;
+    }
+
+    .bleed {
+        margin-top: 300px;
+    }
+
+    article {
+        background-color: #00A6A6;
+        border: 2px solid #333232;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .chefs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-top: 50px;
+    }
+
+    
+
+}
+    
