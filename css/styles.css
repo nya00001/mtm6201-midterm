@@ -497,7 +497,7 @@ footer {
     vertical-align: middle;
 }
 
-@media screen and (min-width: 768px) 
+@media screen and (min-width: 968px) 
 {
     .wrapper {
         margin: auto;
@@ -506,16 +506,13 @@ footer {
 
     .header {
         display: flex;
-        justify-content: space-between;
-    }
-
-    .logo {
-        display: flex;
     }
 
     ul {
+        padding-left: 9rem ;
         margin: 85px;
         display: flex;
+        justify-content: center;
         flex-direction: row;
     }
 
@@ -530,7 +527,14 @@ footer {
         margin-top: 300px;
     }
 
-    article {
+    .chefs article {
+        background-color: #00A6A6;
+        border: 2px solid #333232;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .menu-items article {
         background-color: #00A6A6;
         border: 2px solid #333232;
         border-radius: 10px;
@@ -564,5 +568,29 @@ footer {
         right: 0;
         margin-top: 50px;
     }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      
+      .form {
+        grid-column: 1 / span 1;
+      }
+      
+      .location {
+        grid-column: 2 / span 1;
+      }
+
+      .location h3 {
+        margin-top: 40px;
+        font-size: 24px;
+      }
+
+      iframe {
+        margin-top: 100px;
+      }
+
 }
     
