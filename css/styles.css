@@ -50,10 +50,18 @@ table {
 	border-spacing: 0;
 }
 
-body {
-    background-color: #BBDEF0;
-    font-family: 'Ysabeau Infant', sans-serif;
+:root {
+    --body-color: #F7F7FF;
+    --nav-color: #279AF1;
+    --footer-color: #23B5D3;
+    --text-color: #070600;
+    --text-color-second: #C3ADFF;
   }
+
+body {
+    background-color: var(--body-color);
+    font-family: 'Ysabeau Infant', sans-serif;
+}
 
 .logo {
     display: flex;
@@ -81,7 +89,7 @@ ul li:hover {
   
 ul li a {
     color: #fff;
-    background-color: #00A6A6;
+    background-color: var(--nav-color);
     padding: 20px;
     text-decoration: none;
     font-size: 20px;
@@ -89,7 +97,8 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: #333232;
+    color: var(--text-color);
+    background-color: var(--text-color-second);
 }
 
 .home {
@@ -98,12 +107,14 @@ ul li a:hover {
 }
   
 .home h1 {
+    color: var(--text-color);
     font-size: 36px;
     font-weight: bolder;
     margin-bottom: 30px;
 }
 
 .paragraph p {
+    color: var(--text-color);
     font-size: 18px;
 }
 
@@ -115,19 +126,20 @@ ul li a:hover {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    background-color: #333232;
-    color: #FFFFFF;
+    background-color: var(--text-color-second);
+    color: var(--text-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
   
-  .contactlink:hover {
-    background-color: black;
-  }
+.contactlink:hover {
+    color: var(--body-color);
+    background-color: var(--text-color);
+}
   
-  .contactlink:active {
-    background-color: #333232;
+.contactlink:active {
+    background-color: var(--nav-color);
   }
 
 .bleed {
@@ -138,99 +150,30 @@ ul li a:hover {
 }
 
 .chefs h2 {
+    color: var(--text-color);
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.chef1 {
-    margin: 10px;
-}
-.chef1 img {
+.chefs img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: auto;
 }
 
-.chef1 h3 {
+.info h3 {
+    color: var(--text-color);
     text-align: center;
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
   }
 
-.chef1 p {
-    text-align: center;
-    font-size: 18px;
-    padding-bottom: 20px;
-}
-
-.chef2 {
-    margin: 10px;
-}
-.chef2 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.chef2 h3 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-  }
-
-.chef2 p {
-    text-align: center;
-    font-size: 18px;
-    padding-bottom: 20px;
-}
-
-.chef3 {
-    margin: 10px;
-}
-.chef3 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.chef3 h3 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-  }
-
-.chef3 p {
-    text-align: center;
-    font-size: 18px;
-    padding-bottom: 20px;
-}
-
-.chef4 {
-    margin: 10px;
-}
-.chef4 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.chef4 h3 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-  }
-
-.chef4 p {
+.info p {
+    color: var(--text-color);
     text-align: center;
     font-size: 18px;
     padding-bottom: 20px;
@@ -245,27 +188,29 @@ h2 {
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .tagine {
     margin: 10px;
 }
-.tagine img {
+.menu-items img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: auto;
 }
 
-.tagine h3 {
+.menu-items h3 {
+    color: var(--text-color);
     text-align: center;
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
   }
 
-.tagine p {
+.menu-items p {
+    color: var(--text-color);
     text-align: center;
     font-size: 18px;
     padding-bottom: 20px;
@@ -274,70 +219,13 @@ h2 {
 .couscous {
     margin: 10px;
 }
-.couscous img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.couscous h3 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-  }
-
-.couscous p {
-    text-align: center;
-    font-size: 18px;
-    padding-bottom: 20px;
-}
 
 .pastilla {
     margin: 10px;
 }
-.pastilla img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.pastilla h3 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-  }
-
-.pastilla p {
-    text-align: center;
-    font-size: 18px;
-    padding-bottom: 20px;
-}
 
 .tea {
     margin: 10px;
-}
-.tea img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.tea h3 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-  }
-
-.tea p {
-    text-align: center;
-    font-size: 18px;
-    padding-bottom: 20px;
 }
 
 .price {
@@ -356,7 +244,7 @@ h2 {
     }
     50% {
       border-width: 2px;
-      border-color: #00A6A6;
+      border-color: var(--text-color-second);
       border-style: solid;
     }
     100% {
@@ -412,8 +300,8 @@ label {
 }
 
 input[type="submit"] {
-    background-color: #333232;
-    color: #fff;
+    background-color: var(--text-color);
+    color: var(--body-color);
     border: none;
     padding: 10px 20px;
     display: block;
@@ -426,11 +314,13 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #00A6A6;
+    color: var(--text-color);
+    background-color: var(--text-color-second);
     transform: scale(0.9);
 }
 
 .location h3 {
+    color: var(--text-color);
     text-align: center;
     font-size: 20px;
     font-weight: bold;
@@ -443,8 +333,8 @@ input[type="submit"]:hover {
 }
 
 footer {
-    background-color: #333232;
-    color: #BBDEF0;
+    background-color: var(--footer-color);
+    color: var(--text-color);
     text-align: center;
     padding: 20px;
     position: relative;
@@ -459,7 +349,7 @@ footer {
 .social-icons a {
     display: inline-block;
     margin: 0 10px;
-    color: #BBDEF0;
+    color: var(--text-color);
     font-size: 20px;
 }
   
@@ -471,7 +361,7 @@ footer {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    color: #BBDEF0;
+    color: var(--text-color);
     font-size: 50px;
     text-decoration: none;
 }
@@ -512,7 +402,7 @@ footer {
         padding-left: 9rem ;
         margin: 85px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         flex-direction: row;
     }
 
@@ -520,7 +410,7 @@ footer {
         position: absolute;
         left: 0;
         right: 0;
-        background-color: #00A6A6;
+        background-color: var(--footer-color);
     }
 
     .bleed {
@@ -528,15 +418,15 @@ footer {
     }
 
     .chefs article {
-        background-color: #00A6A6;
-        border: 2px solid #333232;
+        background-color: var(--text-color-second);
+        border: 2px solid;
         border-radius: 10px;
         padding: 20px;
     }
 
     .menu-items article {
-        background-color: #00A6A6;
-        border: 2px solid #333232;
+        background-color: var(--text-color-second);
+        border: 2px solid;
         border-radius: 10px;
         padding: 20px;
     }
@@ -573,24 +463,24 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-      }
+    }
       
-      .form {
+    .form {
         grid-column: 1 / span 1;
-      }
+    }
       
-      .location {
+    .location {
         grid-column: 2 / span 1;
-      }
+    }
 
-      .location h3 {
+    .location h3 {
         margin-top: 40px;
         font-size: 24px;
-      }
+    }
 
-      iframe {
+    iframe {
         margin-top: 100px;
-      }
+    }
 
 }
     
