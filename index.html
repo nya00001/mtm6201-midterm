@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags and external links for the font and map from google and also fontawesome icons -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <title>Al-Kasbah</title>
 </head>
 <body>
+    <!-- The logo is displayed within a <div> element with the class "logo", and the navigation menu is structured as an unordered list within a <nav> element. -->
     <div class="wrapper">
         <header id="top" role="banner">
             <div class="header">
@@ -27,17 +29,21 @@
             </nav>
             </div>
         </header>
+        <!-- main section with identifier -->
         <main role="main" id="maincontent">
+        <!-- section with aria roles will be a banner in the home page -->
         <section class="home" role="region">
             <h1 role="heading">Welcome to Al-Kasbah</h1>
             <div class="paragraph"> 
                 <p>Indulge in the rich flavors and vibrant atmosphere of Morocco at Al Kasbah, a captivating Moroccan restaurant. Immerse yourself in an exotic culinary journey as you savor the authentic tastes of Moroccan cuisine, known for its aromatic spices, tender meats, and tantalizing blends of flavors. Our talented chefs craft each dish with passion and expertise, ensuring an unforgettable dining experience. Whether you're seeking a romantic evening, a gathering with friends, or a unique cultural adventure, Al Kasbah invites you to savor the essence of Morocco right here, in the heart of our restaurant.</p>
+                <!-- link style as button and directs to contact page -->
                 <a class=contactlink href="contact.html">Contact Us</a>
             </div>
         </section>
         <div>
-        <h2 class="bleed">Meet our Chefs</h2>
+        <h2 role="heading" class="bleed">Meet our Chefs</h2>
         </div>
+        <!-- chefs section with aria roles and schema, convert into grid in css desktop version, images optimized for the screen sizes -->
         <section class="chefs" role="region" >
             <article class="chef1" itemscope itemtype="https://schema.org/Person">
                 <picture>
@@ -61,7 +67,6 @@
                   <p itemprop="description">Known for her exquisite pastry skills, Chef Maria delights our guests with her delectable Moroccan desserts and pastries. Her attention to detail and artistic presentation make each dessert a work of art.</p>
                 </div>
               </article>
-              
               <article class="chef3" itemscope itemtype="https://schema.org/Person">
                 <picture>
                   <source srcset="images/chef-3-small.jpg" media="(max-width: 967px)">
@@ -73,7 +78,6 @@
                   <p itemprop="description">Chef Fatima is an accomplished chef known for her creativity and passion for Moroccan cuisine. With a deep understanding of traditional flavors and modern techniques, she crafts dishes that are both visually stunning and incredibly delicious.</p>
                 </div>
               </article>
-              
               <article class="chef4" itemscope itemtype="https://schema.org/Person">
                 <picture>
                   <source srcset="images/chef-4-small.jpg" media="(max-width: 967px)">
@@ -87,6 +91,7 @@
               </article>
         </section>
         </main>
+        <!-- footer section with aria and social media icons, copyrights and a skip link to be animated in css -->
     <footer role="contentinfo">
         <div class="footer">
             <div class="social-icons">
