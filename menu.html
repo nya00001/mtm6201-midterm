@@ -13,12 +13,12 @@
 </head>
 <body>
   <div class="wrapper">
-    <header>
+    <header id="top" role="banner">
       <div class="header">
         <div class="logo">
-          <img src="images/logo.png" alt="Al-Kasbah Logo">
+          <img role="img" src="images/logo.png" alt="Al-Kasbah Logo">
         </div>
-        <nav>
+        <nav role="navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -27,60 +27,74 @@
         </nav>
       </div>
     </header>
-    <h2>Our Menu</h2>
-    <section class="menu">
-        <div class="menu-items">
-          <article class="tagine">
-            <picture>
-              <source srcset="images/tagine-small.jpg" media="(max-width: 967px)">
-              <source srcset="images/tagine-large.jpg" media="(min-width: 968px)">
-              <img src="images/tagine-large.jpg" alt="Tagine Dish">
-            </picture>
-            <div class="info">
-              <h3>Moroccan Tagine</h3>
-              <p>A delicious combination of tender meat, aromatic spices, and vegetables, slow-cooked to perfection.</p>
-              <span class="price">$15.99</span>
-            </div>
-          </article>
-          <article class="couscous">
-            <picture>
-              <source srcset="images/couscous-small.jpg" media="(max-width: 967px)">
-              <source srcset="images/couscous-large.jpg" media="(min-width: 968px)">
-              <img src="images/couscous-large.jpg" alt="Couscous Dish">
-            </picture>
-            <div class="info">
-              <h3> Moroccan Couscous</h3>
-              <p>A traditional Moroccan dish consisting of fluffy couscous topped with a variety of vegetables, meats, and savory broth.</p>
-              <span class="price">$12.99</span>
-            </div>
-          </article>
-          <article class="pastilla">
-            <picture>
-              <source srcset="images/pastilla-small.jpg" media="(max-width: 967px)">
-              <source srcset="images/pastilla-large.jpg" media="(min-width: 968px)">
-              <img src="images/pastilla-large.jpg" alt="Pastilla Dish">
-            </picture>
-            <div class="info">
-              <h3>Moroccan Pastilla</h3>
-              <p>A refreshing and aromatic blend of green tea, fresh mint leaves, and a touch of sweetness. Perfect for a hot day.</p>
-              <span class="price">$20.99</span>
-            </div>
-          </article>
-          <article class="tea">
-            <picture>
-              <source srcset="images/tea-small.jpg" media="(max-width: 967px)">
-              <source srcset="images/tea-large.jpg" media="(min-width: 968px)">
-              <img src="images/tea-large.jpg" alt="Moroccan Mint Tea">
-            </picture>
-            <div class="info">
-              <h3>Moroccan Mint Tea</h3>
-              <p>A refreshing and aromatic blend of green tea, fresh mint leaves, and a touch of sweetness. Perfect for a hot day.</p>
-              <span class="price">$3.99</span>
-            </div>
-          </article>
-        </div>
-      </section>
-    <footer>
+    <main role="main" id="maincontent">
+    <h2 role="heading">Our Menu</h2>
+    <section class="menu" role="region">
+      <div class="menu-items">
+        <article class="tagine" itemscope itemtype="https://schema.org/MenuItem" role="listitem">
+          <picture>
+            <source srcset="images/tagine-small.jpg" media="(max-width: 967px)">
+            <source srcset="images/tagine-large.jpg" media="(min-width: 968px)">
+            <img role="img" itemprop="image" src="images/tagine-large.jpg" alt="Tagine Dish">
+          </picture>
+          <div class="info">
+            <h3 itemprop="name" role="heading">Moroccan Tagine</h3>
+            <p itemprop="description">A delicious combination of tender meat, aromatic spices, and vegetables, slow-cooked to perfection.</p>
+            <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="priceCurrency" content="USD">$</span>
+              <span itemprop="price" content="15.99">15.99</span>
+            </span>
+          </div>
+        </article>
+        <article class="couscous" itemscope itemtype="https://schema.org/MenuItem" role="listitem">
+          <picture>
+            <source srcset="images/couscous-small.jpg" media="(max-width: 967px)">
+            <source srcset="images/couscous-large.jpg" media="(min-width: 968px)">
+            <img role="img" itemprop="image" src="images/couscous-large.jpg" alt="Couscous Dish">
+          </picture>
+          <div class="info">
+            <h3 itemprop="name" role="heading">Moroccan Couscous</h3>
+            <p itemprop="description">A traditional Moroccan dish consisting of fluffy couscous topped with a variety of vegetables, meats, and savory broth.</p>
+            <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="priceCurrency" content="USD">$</span>
+              <span itemprop="price" content="12.99">12.99</span>
+            </span>
+          </div>
+        </article>
+        <article class="pastilla" itemscope itemtype="https://schema.org/MenuItem" role="listitem">
+          <picture>
+            <source srcset="images/pastilla-small.jpg" media="(max-width: 967px)">
+            <source srcset="images/pastilla-large.jpg" media="(min-width: 968px)">
+            <img role="img" itemprop="image" src="images/pastilla-large.jpg" alt="Pastilla Dish">
+          </picture>
+          <div class="info">
+            <h3 itemprop="name" role="heading">Moroccan Pastilla</h3>
+            <p itemprop="description">A refreshing and aromatic blend of green tea, fresh mint leaves, and a touch of sweetness. Perfect for a hot day.</p>
+            <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="priceCurrency" content="USD">$</span>
+              <span itemprop="price" content="20.99">20.99</span>
+            </span>
+          </div>
+        </article>
+        <article class="tea" itemscope itemtype="https://schema.org/MenuItem" role="listitem">
+          <picture>
+            <source srcset="images/tea-small.jpg" media="(max-width: 967px)">
+            <source srcset="images/tea-large.jpg" media="(min-width: 968px)">
+            <img role="img" itemprop="image" src="images/tea-large.jpg" alt="Moroccan Mint Tea">
+          </picture>
+          <div class="info">
+            <h3 itemprop="name" role="heading">Moroccan Mint Tea</h3>
+            <p itemprop="description">A refreshing and aromatic blend of green tea, fresh mint leaves, and a touch of sweetness. Perfect for a hot day.</p>
+            <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="priceCurrency" content="USD">$</span>
+              <span itemprop="price" content="3.99">3.99</span>
+            </span>
+          </div>
+        </article>
+      </div>
+    </section>
+    </main>
+    <footer role="contentinfo">
       <div class="footer">
         <div class="social-icons">
           <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
@@ -88,7 +102,7 @@
           <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
         <p>&copy; Al-Kasbah, 2023</p>
-        <a href="#top" class="skip-link" aria-label="Go to top">
+        <a href="#top" class="up" aria-label="Go to top">
           <i class="fas fa-arrow-up"></i>
         </a>
       </div>

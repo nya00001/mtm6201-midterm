@@ -231,14 +231,11 @@ h2 {
 .price {
     font-size: 20px;
     margin-bottom: 20px;
-}
-
-.price {
     animation: borderAnimation 1s forwards;
     animation-iteration-count: infinite;
-  }
+}
   
-  @keyframes borderAnimation {
+@keyframes borderAnimation {
     0% {
       border-width: 0;
     }
@@ -250,7 +247,7 @@ h2 {
     100% {
         border-width: 0;
       }
-  }
+}
 
 .contact {
     text-align: center;
@@ -357,7 +354,7 @@ footer {
     color: #fff;
 }
 
-.skip-link {
+.up {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -366,7 +363,7 @@ footer {
     text-decoration: none;
 }
 
-.skip-link:hover {
+.up:hover {
     animation: skiplinkmove 0.3s ease-in-out;
     animation-iteration-count: infinite;
 }
@@ -383,7 +380,7 @@ footer {
     }
 }
   
-.skip-link i {
+.up i {
     vertical-align: middle;
 }
 
@@ -414,7 +411,7 @@ footer {
     }
 
     .bleed {
-        margin-top: 300px;
+        padding-top: 300px;
     }
 
     .chefs article {

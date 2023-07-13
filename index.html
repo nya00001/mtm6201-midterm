@@ -13,12 +13,12 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
+        <header id="top" role="banner">
             <div class="header">
-                <div class="logo">
-                    <img src="images/logo.png" alt="Al-Kasbah Logo">
+                <div class="logo" >
+                    <img role="img" src="images/logo.png" alt="Al-Kasbah Logo">
                 </div>
-            <nav>
+            <nav role="navigation">
                 <ul> 
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
@@ -27,8 +27,9 @@
             </nav>
             </div>
         </header>
-        <section class="home">
-            <h1>Welcome to Al-Kasbah</h1>
+        <main role="main" id="maincontent">
+        <section class="home" role="region">
+            <h1 role="heading">Welcome to Al-Kasbah</h1>
             <div class="paragraph"> 
                 <p>Indulge in the rich flavors and vibrant atmosphere of Morocco at Al Kasbah, a captivating Moroccan restaurant. Immerse yourself in an exotic culinary journey as you savor the authentic tastes of Moroccan cuisine, known for its aromatic spices, tender meats, and tantalizing blends of flavors. Our talented chefs craft each dish with passion and expertise, ensuring an unforgettable dining experience. Whether you're seeking a romantic evening, a gathering with friends, or a unique cultural adventure, Al Kasbah invites you to savor the essence of Morocco right here, in the heart of our restaurant.</p>
                 <a class=contactlink href="contact.html">Contact Us</a>
@@ -37,65 +38,68 @@
         <div>
         <h2 class="bleed">Meet our Chefs</h2>
         </div>
-        <section class="chefs">
-            <article class="chef1">
+        <section class="chefs" role="region" >
+            <article class="chef1" itemscope itemtype="https://schema.org/Person">
                 <picture>
-                    <source srcset="images/chef-1-small.jpg" media="(max-width: 967px)">
-                    <source srcset="images/chef-1-large.jpg" media="(min-width: 968px)">
-                    <img src="images/chef-1-large.jpg" alt="Chef John Doe">
+                   <source srcset="images/chef-1-small.jpg" media="(max-width: 967px)">
+                   <source srcset="images/chef-1-large.jpg" media="(min-width: 968px)">
+                   <img  itemprop="image" role="img" src="images/chef-1-large.jpg" alt="Chef John Doe">
                   </picture>
                 <div class="info">
-                    <h3>Chef John Doe</h3>
-                    <p>With over 15 years of experience in Moroccan cuisine, Chef John brings a wealth of knowledge and creativity to Al Kasbah. His passion for using fresh, locally-sourced ingredients shines through in each dish he prepares.</p>
+                   <h3 role="heading" itemprop="name">Chef John Doe</h3>
+                   <p itemprop="description">With over 15 years of experience in Moroccan cuisine, Chef John brings a wealth of knowledge and creativity to Al Kasbah. His passion for using fresh, locally-sourced ingredients shines through in each dish he prepares.</p>
                 </div>
             </article>
-            <article class="chef2">
+            <article class="chef2" itemscope itemtype="https://schema.org/Person">
                 <picture>
-                    <source srcset="images/chef-2-small.jpg" media="(max-width: 967px)">
-                    <source srcset="images/chef-2-large.jpg" media="(min-width: 968px)">
-                    <img src="images/chef-2-large.jpg" alt="Chef Maria Amin">
-                  </picture>
+                  <source srcset="images/chef-2-small.jpg" media="(max-width: 967px)">
+                  <source srcset="images/chef-2-large.jpg" media="(min-width: 968px)">
+                  <img itemprop="image" role="img" src="images/chef-2-large.jpg" alt="Chef Maria Amin">
+                </picture>
                 <div class="info">
-                    <h3>Chef Maria Amin</h3>
-                    <p>Known for her exquisite pastry skills, Chef Maria delights our guests with her delectable Moroccan desserts and pastries. Her attention to detail and artistic presentation make each dessert a work of art.</p>
+                  <h3 role="heading" itemprop="name">Chef Maria Amin</h3>
+                  <p itemprop="description">Known for her exquisite pastry skills, Chef Maria delights our guests with her delectable Moroccan desserts and pastries. Her attention to detail and artistic presentation make each dessert a work of art.</p>
                 </div>
-            </article>
-            <article class="chef3">
+              </article>
+              
+              <article class="chef3" itemscope itemtype="https://schema.org/Person">
                 <picture>
-                    <source srcset="images/chef-3-small.jpg" media="(max-width: 967px)">
-                    <source srcset="images/chef-3-large.jpg" media="(min-width: 968px)">
-                    <img src="images/chef-3-large.jpg" alt="Chef Fatima Benali">
-                  </picture>
+                  <source srcset="images/chef-3-small.jpg" media="(max-width: 967px)">
+                  <source srcset="images/chef-3-large.jpg" media="(min-width: 968px)">
+                  <img itemprop="image" role="img" src="images/chef-3-large.jpg" alt="Chef Fatima Benali">
+                </picture>
                 <div class="info">
-                    <h3>Chef Fatima Benali</h3>
-                    <p>Chef Fatima is an accomplished chef known for her creativity and passion for Moroccan cuisine. With a deep understanding of traditional flavors and modern techniques, she crafts dishes that are both visually stunning and incredibly delicious.</p>
+                  <h3 role="heading" itemprop="name">Chef Fatima Benali</h3>
+                  <p itemprop="description">Chef Fatima is an accomplished chef known for her creativity and passion for Moroccan cuisine. With a deep understanding of traditional flavors and modern techniques, she crafts dishes that are both visually stunning and incredibly delicious.</p>
                 </div>
-            </article>
-            <article class="chef4">
+              </article>
+              
+              <article class="chef4" itemscope itemtype="https://schema.org/Person">
                 <picture>
-                    <source srcset="images/chef-4-small.jpg" media="(max-width: 967px)">
-                    <source srcset="images/chef-4-large.jpg" media="(min-width: 968px)">
-                    <img src="images/chef-4-large.jpg" alt="Chef Ahmed Hassan">
-                  </picture>
+                  <source srcset="images/chef-4-small.jpg" media="(max-width: 967px)">
+                  <source srcset="images/chef-4-large.jpg" media="(min-width: 968px)">
+                  <img itemprop="image" role="img" src="images/chef-4-large.jpg" alt="Chef Ahmed Hassan">
+                </picture>
                 <div class="info">
-                    <h3>Chef Ahmed Hassan</h3>
-                    <p>Chef Ahmed's expertise lies in the bold and aromatic flavors of Moroccan spices. His masterful use of spices adds depth and complexity to every dish.</p>
+                  <h3 role="heading" itemprop="name">Chef Ahmed Hassan</h3>
+                  <p itemprop="description">Chef Ahmed's expertise lies in the bold and aromatic flavors of Moroccan spices. His masterful use of spices adds depth and complexity to every dish.</p>
                 </div>
-            </article>
+              </article>
         </section>
-        <footer>
-            <div class="footer">
-                <div class="social-icons">
-                    <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
-                <p>&copy; Al-Kasbah, 2023</p>
-                <a href="#top" class="skip-link" aria-label="Go to top">
-                    <i class="fas fa-arrow-up"></i>
-                </a>
+        </main>
+    <footer role="contentinfo">
+        <div class="footer">
+            <div class="social-icons">
+                <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
-        </footer>
+            <p>&copy; Al-Kasbah, 2023</p>
+            <a href="#top" class="up" aria-label="Go to top">
+            <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
     </div>
 </body>
 </html>
